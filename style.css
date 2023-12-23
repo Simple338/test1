@@ -1,70 +1,90 @@
-header {
-    background-color: #2C3E50;
+/* General Styling for all pages (Mainly header and footer) */
+html {
+    font-family: 'Gudea', 'Arial', sans-serif;
+    background-color: #ADACAC;
 }
 
-.navbar-brand img {
-    height: auto; 
+header {
+    background-color: #2C3E50;
+    width: 100%;
+    
+    padding-bottom: 20px;
+}
+
+header img {
+    height: auto;
     width: 400px;
 }
 
-@media (max-width: 768px) {
-    .navbar-brand img {
-        width: 300px;
-    }
-}
-
-@media (max-width: 576px) {
-    .navbar-brand img {
-        width: 200px;
-    }
-}
-
-.navbar {
+nav {
     padding-bottom: 0;
+    text-align: right;
 }
 
-.navbar-collapse {
-    
-    justify-content: center;
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
 }
 
-.navbar-nav {
-    align-items: flex-start;
-    flex-basis: auto;
-    width: 100%;
-    justify-content: center;
+li {
+    padding: 5px;
 }
 
-.navbar-nav .nav-link {
+.navbtn {
     color: black;
     background-color: white;
     margin: 5px;
-    padding: 5px;
+    padding: 20px;
     border-radius: 5px;
+    text-decoration:none;
+    font-weight: bold;
 }
 
-.navbar-nav .nav-link:hover {
+a:hover {
     background-color: #3D5A80;
     color: white;
 }
 
 
-.navbar-toggler {
-    display: block;
-}
-
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
 footer {
     background-color: #2C3E50;
     color: white;
-    height: 500px;
     text-align: center;
+    padding: 20px;
 }
 
-main {
-    background-color: #ADACAC;
+footer a {
+   text-decoration: underline;
+   color: white;
 }
+/* index.html styling */
+/* About Us Section */
+#homeinfobox {
+    background-color: #35476C;
+    color: white;
+    border: 2px solid #35476D; 
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#homeinfotitle {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#homeinfo {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+
+
+
