@@ -14,6 +14,7 @@ header {
 header img {
     height: auto;
     width: 400px;
+    padding: 20px;
 }
 
 nav {
@@ -60,8 +61,8 @@ footer a {
    text-decoration: underline;
    color: white;
 }
-/* index.html styling */
-/* About Us Section */
+
+/* home styling*/
 #homeinfobox {
     background-color: #35476C;
     color: white;
@@ -85,12 +86,15 @@ footer a {
 }
 
 
-/*aboutus.html styling */ 
+/*aboutu s and gallery styling */ 
 
 #aboutusmain {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ADACAC;
 }
 
 #aboutuscol1, #aboutuscol2 {
@@ -118,8 +122,26 @@ footer a {
     text-align: left;
 }
 
+#gallery {
+    width: 100%;
+}
 
-/* Log In Form Css */
+#gallery .row {
+    margin: 0;
+}
+
+#gallery .col-md-3.col-sm-6.col-12.mb-3 {
+    padding: 5px;
+}
+
+#gallery img {
+    border-radius: 10px;
+    
+}
+
+
+
+/* Log In Form */
 
 
 #loginarea{
@@ -205,7 +227,7 @@ footer a {
 
 
 
-/* Contact Us */
+/* Contact Us styling */
 
 #contactusmain {
     display: flex;
@@ -263,3 +285,164 @@ footer a {
 
 }
 
+
+/* Game styling */
+
+
+
+#gamemain {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.gamecolumn {
+    flex: 1;
+    margin: 10px;
+}
+
+.game {
+    margin-bottom: 20px;
+}
+
+.game h3 {
+    text-align: center;
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.game button {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.game button:hover {
+    background-color: #35476C;
+    color: white;
+}
+
+
+
+
+/* Media Queries */
+
+/* Mobile Devices */
+@media only screen and (max-width: 600px) {
+    #aboutusmain, #contactusmain {
+        flex-direction: column;
+    }
+
+    #aboutuscol1, #aboutuscol2,
+    #contactuscol1, #contactuscol2 {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    #gallery .col-md-3.col-sm-6.col-12.mb-3 {
+        padding: 3px;
+    }
+
+    .navbtn {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    #homeinfotitle, .columntitle, .locations {
+        font-size: 2rem;
+    }
+
+    .contact {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Smaller Mobile Devices */
+@media only screen and (max-width: 480px) {
+    #aboutusmain, #contactusmain {
+        flex-direction: column;
+    }
+
+    #aboutuscol1, #aboutuscol2,
+    #contactuscol1, #contactuscol2 {
+        flex: 1;
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    #gallery .col-md-3.col-sm-6.col-12.mb-3 {
+        padding: 2px;
+    }
+
+    .navbtn {
+        padding: 8px;
+        font-size: 0.7rem;
+    }
+
+    header img {
+        width: 300px; 
+    }
+
+    #homeinfotitle, .columntitle, .locations {
+        font-size: 1.8rem;
+    }
+
+    .contact, #homeinfo, #aboutuscol1 p, #aboutuscol2 p,
+    #contactuscol1 p, #contactuscol2 p {
+        font-size: 1rem;
+    }
+
+    li {
+
+        padding: 0%;
+    }
+
+    #loginForm, #registerForm {
+
+        margin: 0%;
+        width: 300px;
+
+    }
+
+
+
+/* Tablet Devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    #aboutusmain, #contactusmain {
+        flex-direction: row;
+    }
+
+    #aboutuscol1, #aboutuscol2,
+    #contactuscol1, #contactuscol2 {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    #gallery .col-md-3.col-sm-6.col-12.mb-3 {
+        padding: 5px;
+    }
+
+    .navbtn {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    #homeinfotitle, .columntitle, .locations {
+        font-size: 2.5rem;
+    }
+
+    .contact {
+        font-size: 1.5rem;
+    }
+}
+ }

@@ -4,71 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-          <a href="#" class="navbar-brand">
-            <img id="Logo" src="SmartBetLogoNoBackground.png" alt="Logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
+      <img id="Logo" src="SmartBetLogoNoBackground.png" alt="Logo">
+        <nav>
+            <ul>
+              <li>
+                <a class="navbtn" href="index.html">Home</a>
               </li>
-              <li class="nav-item">
-                <a href="games.html" class="nav-link">Games</a>
+              <li>
+                <a class="navbtn" href="games.html">Games</a>
               </li>
-              <li class="nav-item">
-                <a href="aboutus.html" class="nav-link">About Us</a>
+              <li>
+                <a class="navbtn" href="aboutus.html">About Us</a>
               </li>
-              <li class="nav-item">
-                <a href="contactus.html" class="nav-link">Contact Us</a>
-                <li class="nav-item">
-                    <a href="login.html" class="nav-link">Sign In/Register</a>
-                  </li>
+              <li>
+                <a class="navbtn" href="contactus.html">Contact Us</a>
+              </li>
+              <li>
+                <a class="navbtn" href="login.html">Sign In/Register</a>
               </li>
             </ul>
-          </div>
-         
-          
         </nav>
-      </header>
+    </header>
 
-    <main>
-        <br><br><br><br><br><br>
+    <main id="gamemain">
+         
+      <div class="gamecolumn">
+       
+        <div class="game">
+            <h3>Blackjack</h3>
+            <img src="blackjack.jpg" alt="Blackjack">
+            <button id="blackjackbtn">Try Me</button>
+        </div>
+        <div class="game">
+            <h3>Poker</h3>
+            <img src="poker.jpg" alt="Poker">
+            <button id="pokerbtn">Try Me</button>
+        </div>
+        <div class="game">
+            <h3>Bridge</h3>
+            <img src="bridge.jpg" alt="Bridge">
+            <button id="bridgebtn">Try Me</button>
+        </div>
+        <div class="game">
+            <h3>Baccarat</h3>
+            <img src="Baccarat.jpg" alt="Baccarat">
+            <button id="baccaratbtn">Try Me</button>
+        </div>
+    </div>
+    <div class="gamecolumn">
         
+        <div class="game">
+            <h3>Pai-Gow Poker</h3>
+            <img src="paigowpoker.jpg" alt="Pai-Gow Poker">
+            <button id="paigowbtn">Try Me</button>
+        </div>
+        <div class="game">
+            <h3>Three Card Poker</h3>
+            <img src="threecardpoker.jpg" alt="Three Card Poker">
+            <button id="threecardbtn">Try Me</button>
+        </div>
+        <div class="game">
+            <h3>Rummy</h3>
+            <img src="rummy.JPG" alt="Rummy">
+            <button id="rummybtn">Try Me</button>
+        </div>
+        <div class="game">
+            <h3>Carribean Stud Poker</h3>
+            <img src="caribbeanstud.jpg" alt="Carribean Stud Poker">
+            <button id="carribeanbtn">Try Me</button>
+        </div>
+    </div>
+
+
+
+
+    <script>
+      $(document).ready(function() {
+        $('#baccaratbtn').click(function() { window.location.href = 'https://wizardofodds.com/play/baccarat/'; });
+        $('#pokerbtn').click(function() { window.location.href = 'https://games.aarp.org/games/texas-holdem-poker-sit-and-go'; });
+        $('#bridgebtn').click(function() { window.location.href = 'https://games.aarp.org/games/bridge'; });
+        $('#paigowbtn').click(function() { window.location.href = 'https://www.bonus.com/pai-gow/'; });
+        $('#threecardbtn').click(function() { window.location.href = 'https://www.table-games-online.com/3-card-poker/'; });
+        $('#rummybtn').click(function() { window.location.href = 'https://cardgames.io/rummy/'; });
+        $('#carribeanbtn').click(function() { window.location.href = 'https://www.table-games-online.com/caribbean-stud-poker/'; });
+        $('#blackjackbtn').click(function() { window.location.href = 'https://games.washingtonpost.com/games/blackjack'; });
+      });
+    </script>
+
     </main>
-    
-    <footer>
-       <br> <p>  SmartBet Gaming Ltd &#8482;</p> 
-        <p> 
-            Address: No. 88, Casino Avenue, Valletta, VLT 1432, Malta.<br>
-            Copyright 2023 SmartBet Gaming Ltd.™ All rights reserved.<br>
-            SmartBet Gaming Ltd is a proud member of the iGaming community, listed on the Malta Stock Exchange.
-            <br><br>
-            Licensing and Regulation:<br>
-            SmartBet operates under license from the Malta Gaming Authority (MGA). License Number: MGA/B2C/112/2023, issued on 11/10/2023.<br>
-            For users registering from Canada, services are provided under the same Maltese license.<br>
-            In the UK, SmartBet operates under SmartBet UK Ltd, regulated by the UK Gambling Commission, License Number: 54321.<br>
-            Services in European Single Market member states are provided by SmartBet EU Ltd, a Malta-incorporated entity.
-            <br><br>
-            Corporate Addresses:<br>
-            Gibraltar Office: 601-701 Europort, Gibraltar.<br>
-            Malta Headquarters: Level G3, Quantum Business Centre, 75, Abate Rigord Street, Ta' Xbiex, XBX 1120, Malta.
-            <br><br>
-            Responsible Gambling:<br>
-            Gambling can be addictive. Play responsibly. Visit our Responsible Gambling page for more information and support tools.<br>
-            For assistance, visit <a href="https://www.rgf.org.mt/" style="text-decoration: underline; font-weight: bold;">Malta Responsible Gaming Foundation</a>.
-        </p>
-    </footer>
+
+    <footer id="homefooter">
+      <p>SmartBet Gaming Ltd &#8482;</p> 
+      <p>
+         <br>
+          Address: No. 88, Casino Avenue, Valletta, VLT 1432, Malta.<br>
+          Copyright 2023 SmartBet Gaming Ltd. All rights reserved.<br>
+          SmartBet Gaming Ltd is a proud member of the iGaming community, listed on the Malta Stock Exchange.<br><br>
+          Licensing and Regulation:<br>
+          SmartBet operates under license from the Malta Gaming Authority (MGA). License Number: MGA/B2C/112/2023, issued on 11/10/2023.<br>
+          For users registering from Canada, services are provided under the same Maltese license.<br>
+          In the UK, SmartBet operates under SmartBet UK Ltd, regulated by the UK Gambling Commission, License Number: 54321.<br>
+          Services in European Single Market member states are provided by SmartBet EU Ltd, a Malta-incorporated entity.<br><br>
+          Corporate Addresses:<br>
+          Gibraltar Office: 601-701 Europort, Gibraltar.<br>
+          Malta Headquarters: Level G3, Quantum Business Centre, 75, Abate Rigord Street, Ta' Xbiex, XBX 1120, Malta.<br><br>
+          Responsible Gambling:<br>
+          For assistance, visit <a href="https://www.rgf.org.mt/Malta">Responsible Gaming Foundation</a>.
+      </p>
+  </footer>
 </body>
 </html>
-
